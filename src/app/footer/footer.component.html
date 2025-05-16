@@ -1,0 +1,100 @@
+<footer class="bg-dark text-warning py-1 border-top border-warning">
+  <div class="container-fluid margin-footer">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase mb-3">Tarantino Films</h5>
+        <p class="small">
+          El universo cinematográfico de Quentin Tarantino en un solo lugar.
+          Sangre, diálogos afilados y momentos inolvidables.
+        </p>
+        <div class="d-flex mt-3">
+          <a href="https://www.facebook.com/TarantinoQuentin/" class="text-warning me-2" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://twitter.com/QTarantino_news" class="text-warning me-1" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.instagram.com/tarantinomovies/" class="text-warning me-3" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/user/TarantinoXXI" class="text-warning" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4 mb-md-0 mt-4">
+        <h5 class="text-uppercase mb-3 text-center">Explorar</h5>
+        <ul class="list-unstyled text-center">
+          <li class="mb-2">
+            <a [routerLink]="['/home']" class="color-li d-block">Inicio</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/home']" class="color-li d-block">Películas</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/actores']" class="color-li d-block">Personajes</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/soundtrack']" class="color-li d-block">Soundtracks</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4 mb-md-0 mt-4 text-center">
+        <h5 class="text-uppercase mb-3">Clásicos</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a [routerLink]="['/details-list', 2]">Pulp Fiction</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/details-list', 1]">Kill Bill</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/details-list', 9]">Django Unchained</a>
+          </li>
+          <li class="mb-2">
+            <a [routerLink]="['/details-list', 8]">Inglourious Basterds</a>
+          </li>
+          <li>
+            <a [routerLink]="['/details-list', 4]">Reservoir Dogs</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-3 mt-4 margin-newsletter">
+        <h5 class="text-uppercase mb-3">Newsletter</h5>
+        <p class="small mb-3">Suscríbete para recibir novedades del mundo Tarantino.</p>
+        <div class="input-group pe-3">
+          <input
+            type="text" class="form-control bg-secondary text-white border-warning me-2"
+            placeholder="Tu email"
+            [(ngModel)]="email"
+            #emailInput="ngModel"
+            pattern=".+@.+" required
+          >
+          <button class="btn btn-warning ms-1 px-3" type="button" (click)="enviarCorreo(emailInput.valid!)">
+            >
+          </button>
+        </div>
+        <div *ngIf="emailInput.invalid && emailInput.touched" class="text-warning small mt-1">
+          Por favor, ingrese un correo electrónico válido.
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-3 mt-3 border-top border-warning">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="small mb-0">© 2023 Tarantino Films. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="small mb-0">
+          <a href="#" class="text-warning text-decoration-none me-3">Términos</a>
+          <a href="#" class="text-warning text-decoration-none me-3">Privacidad</a>
+          <a href="#" class="text-warning text-decoration-none">Contacto</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,11 @@
+.filtro-genero-container {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  
+  .btn-outline-warning.active {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+  }

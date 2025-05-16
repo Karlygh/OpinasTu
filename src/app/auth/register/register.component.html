@@ -1,0 +1,69 @@
+<div class="page-container">
+  <div class="register-container ">
+    <h2>Crear cuenta en OpinasTu</h2>
+    <div *ngIf="!registrationSuccessful; else successMessage">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre completo</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Nombre completo"
+            formControlName="name"
+            required
+          >
+          <div *ngIf="registerForm.get('name')?.invalid && (registerForm.get('name')?.dirty || registerForm.get('name')?.touched)" class="error-message">
+            <div *ngIf="registerForm.get('name')?.errors?.['required']">El nombre es requerido.</div>
+            <div *ngIf="registerForm.get('name')?.errors?.['minlength']">El nombre debe tener al menos 3 caracteres.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Email"
+            formControlName="email"
+            required
+          >
+          <div *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || registerForm.get('email')?.touched)" class="error-message">
+            <div *ngIf="registerForm.get('email')?.errors?.['required']">El email es requerido.</div>
+            <div *ngIf="registerForm.get('email')?.errors?.['email']">El email debe tener un formato válido.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Contraseña"
+            formControlName="password"
+            required
+            minlength="6"
+          >
+          <div *ngIf="registerForm.get('password')?.invalid && (registerForm.get('password')?.dirty || registerForm.get('password')?.touched)" class="error-message">
+            <div *ngIf="registerForm.get('password')?.errors?.['required']">La contraseña es requerida.</div>
+            <div *ngIf="registerForm.get('password')?.errors?.['minlength']">La contraseña debe tener al menos 6 caracteres.</div>
+          </div>
+        </div>
+
+        <button type="submit" class="register-button" [disabled]="registerForm.invalid">Registrarse</button>
+      </form>
+      <p class="login-link">
+        ¿Ya tienes cuenta? <a [routerLink]=" '/login' ">Inicia sesión aquí</a>
+      </p>
+    </div>
+
+    <ng-template #successMessage>
+      <div class="success-container">
+        <p class="success-message">¡Te has registrado con éxito!</p>
+        <p class="redirect-message">Serás redirigido al inicio de sesión en unos segundos...</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+/* ESTILOS SOUNDTRACKS */
+.soundtracks-section {
+  background: #666665;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.soundtrack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.soundtrack-card {
+  background: #2c2c3e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #f7c948;
+  transition: all 0.3s ease;
+}
+
+.soundtrack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(247, 201, 72, 0.2);
+}
+
+.soundtrack-card.tarantino {
+  border-left-color: #e50914;
+  /* Rojo Tarantino */
+}
+
+.movie-title {
+  color: #f7c948;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.song-info {
+  margin: 0.8rem 0;
+}
+
+span {
+  color: #f7c948;
+}
+
+.song-name {
+  color: #fff;
+  font-style: italic;
+}
+
+.artist {
+  color: #ee5454;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.play-button {
+  background: #f7c948;
+  color: #1e1e2f;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background: #ffdf70;
+  transform: scale(1.05);
+}
+
+h2 {
+  color: #ffdf70;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #f0c424;
+  font-size: 2rem;
+}

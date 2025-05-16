@@ -1,0 +1,138 @@
+<!-- TÍTULO PRINCIPAL -->
+<h1 class="text-center text-warning mb-5">Mis Opiniones</h1>
+
+<!-- BOTÓN PARA AÑADIR OPINIÓN -->
+<div class="text-center mb-4">
+  <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#opinionModal">
+    Añadir nueva opinión
+  </button>
+</div>
+
+<!-- LISTA DE OPINIONES -->
+<div class="container">
+  <ul class="list-group" *ngIf="opiniones.length > 0; else noOpiniones">
+    <li id="opinion-item" class="list-group-item opinion-item" *ngFor="let opinion of opiniones; let i = index">
+      
+      <!-- VISTA NORMAL -->
+      <div *ngIf="editandoIndex !== i; else editando">
+        <section class="opinion-details">
+          <strong class="title-container-opinion">Película:</strong>
+          <span class="contenido-opinion">{{ opinion.titulo }}</span>
+        </section>
+        <section class="opinion-details">
+          <strong class="title-container-opinion">Usuario:</strong>
+          <span class="contenido-opinion">{{ opinion.name }}</span>
+        </section>
+        <section class="opinion-details">
+          <strong class="title-container-opinion">Opinión:</strong>
+          <span class="contenido-opinion">{{ opinion.opinion }}</span>
+        </section>
+        <section class="opinion-details">
+          <strong class="title-container-opinion">Nota:</strong>
+          <span class="contenido-opinion">{{ opinion.nota }}</span>
+        </section>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="opinion-actions">
+          <button class="btn btn-warning btn-sm me-2" (click)="editarOpinion(i)">Editar</button>
+          <button class="btn btn-danger btn-sm" (click)="eliminarOpinion(i)">Eliminar</button>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE EDICIÓN -->
+      <ng-template #editando>
+        <form (ngSubmit)="guardarEdicion()">
+          <div class="mb-3">
+            <label class="form-label">Película</label>
+            <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="opinionEditada.titulo" name="titulo" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Usuario</label>
+            <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="opinionEditada.name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Opinión</label>
+            <textarea class="form-control bg-secondary text-white" [(ngModel)]="opinionEditada.opinion" name="opinion" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nota</label>
+            <input type="number" class="form-control bg-secondary text-white" [(ngModel)]="opinionEditada.nota" name="nota" min="1" max="10" required>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary me-2" (click)="cancelarEdicion()">Cancelar</button>
+            <button type="submit" class="btn btn-warning">Guardar</button>
+          </div>
+        </form>
+      </ng-template>
+    </li>
+  </ul>
+
+  <!-- SIN OPINIONES -->
+  <ng-template #noOpiniones>
+    <div class="text-center">
+      <p class="text-white">No tienes opiniones aún.</p>
+      <p class="text-color-opinion">
+        <i class="bi-chat-dots me-1 mb-4"></i> Añade opiniones para descubrir nuevas funciones.
+      </p>
+    </div>
+  </ng-template>
+</div>
+
+<!-- TOP 3 FAVORITAS -->
+<div class="container text-white mb-5" *ngIf="opiniones.length >= 3">
+  <h4 class="text-warning mb-3">🎬 Top 3 Películas Favoritas</h4>
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item opinion-item mb-1" *ngFor="let fav of obtenerTop3()">
+      <strong>{{ fav.titulo }}</strong> - Nota: {{ fav.nota }}
+    </li>
+  </ol>
+</div>
+
+<!-- AVISO PARA ACTIVAR TOP 3 -->
+<div class="container text-info mb-5 mt-2" *ngIf="opiniones.length > 0 && opiniones.length < 3">
+  <p class="text-center">
+    💬 Agrega <strong>{{ 3 - opiniones.length }}</strong> opinión{{ opiniones.length === 2 ? '' : 'es' }} más para ver tu <strong>Top 3 de favoritas</strong>.
+  </p>
+</div>
+
+<!-- MODAL: AÑADIR NUEVA OPINIÓN -->
+<div class="modal fade mt-5" id="opinionModal" tabindex="-1" aria-labelledby="opinionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-warning d-flex justify-content-center position-relative">
+        <h5 class="modal-title text-center w-100" id="opinionModalLabel">Nueva Opinión</h5>
+        <button type="button" class="btn-close position-absolute end-0 me-2" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1) grayscale(100%) brightness(200%);">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- SELECT de películas -->
+        <div class="mb-3">
+          <label class="form-label me-3">Película</label>
+          <select class="form-select select-peliculas" [(ngModel)]="nuevaOpinion.titulo" name="pelicula">
+            <option value="" disabled selected>Selecciona una película</option>
+            <option *ngFor="let titulo of peliculas" [value]="titulo">{{ titulo }}</option>
+          </select>
+        </div>
+
+        <!-- CAMPOS DE OPINIÓN -->
+        <div class="mb-3">
+          <label class="form-label">Usuario</label>
+          <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="nuevaOpinion.name" name="usuario" placeholder="Tu nombre">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Opinión</label>
+          <textarea class="form-control bg-secondary text-white" rows="3" [(ngModel)]="nuevaOpinion.opinion" name="opinion" placeholder="Tu opinión"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Nota</label>
+          <input type="number" class="form-control bg-secondary text-white" [(ngModel)]="nuevaOpinion.nota" name="nota" min="1" max="10" placeholder="Tu nota (1-10)">
+        </div>
+      </div>
+      <div class="modal-footer border-warning">
+        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal" (click)="agregarNuevaOpinion()">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+/* navbar.component.css */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .custom-navbar {
+    background-color: #212529; /* Cambia esto por el color que quieras */
+  }
+  
+  .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: bold;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #ffc107 !important;
+  }
+  .color-navbar{
+    background-color:#171a1d;
+  }
+  .nav-link{
+    color: rgb(158, 154, 154);
+  }
+  .nav-link {
+    transition: all 0.3s ease;
+  }
+  .nav-link:hover {
+    color: #f1f099;
+    transform: scale(1.05);
+  }
+  .navbar-toggler {
+    border-color: #ffc107 ;
+    background-color: #ffc107;
+    padding: 0.25rem 0.5rem;
+  }

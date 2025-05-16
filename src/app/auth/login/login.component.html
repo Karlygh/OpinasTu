@@ -1,0 +1,42 @@
+<!-- Contenedor central en pantalla completa -->
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-dark">
+  <!-- Tarjeta de login -->
+  <div class="login-container text-white">
+    <h2 class="text-warning mb-4 text-center">Bienvenido a OpinasTu</h2>
+
+    <form (ngSubmit)="onSubmit()" class="login-form">
+      <!-- Usuario -->
+      <input 
+        type="text" 
+        class="form-control mb-3"
+        placeholder="Usuario (admin)" 
+        [(ngModel)]="email" 
+        name="email" 
+        required
+      >
+
+      <!-- Contraseña -->
+      <input 
+        type="password" 
+        class="form-control mb-3"
+        placeholder="Contraseña (admin)" 
+        [(ngModel)]="password" 
+        name="password" 
+        required
+      >
+
+      <!-- Error de login -->
+      <div *ngIf="loginError" class="text-danger mb-3">
+        {{ loginError }}
+      </div>
+
+      <!-- Botón de login -->
+      <button type="submit" class="btn btn-warning w-100">Ingresar</button>
+    </form>
+
+    <!-- Enlace a registro -->
+    <p class="register-link mt-3 text-center">
+      ¿No tienes cuenta? <a [routerLink]="'/register'" class="text-warning">Regístrate aquí</a>
+    </p>
+  </div>
+</div>

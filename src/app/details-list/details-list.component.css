@@ -1,0 +1,100 @@
+/* Tarjeta de película */
+.pelicula-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pelicula-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 192, 3, 0.2);
+}
+
+/* Imagen de la película */
+.img-pelicula {
+  height: 270px;
+  object-fit: cover;
+  object-position: 25% center; /* 30% de la altura, es decir, un poco más abajo */
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+/* Contenedor del texto (título y año) */
+.pelicula-card .card-body {
+  background-color: #343a40; /* Gris oscuro */
+  padding: 0.5rem;
+  flex-grow: 0;
+  text-align: center;
+}
+
+/* Título */
+.card-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Año o texto adicional */
+.card-text {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin: 0;
+}
+
+/* Texto estilo de tarjetas aleatorias */
+#card-text-aleatoria {
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+/* Espacio final razonable en sección de tarjetas */
+#card-aleatoria {
+  margin-bottom: 3rem;
+}
+
+/* Versión con fondo amarillo siempre */
+.custom-carousel-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.custom-carousel-arrow:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+  border: 2px solid #343a40;
+}
+
+.custom-carousel-arrow .carousel-control-prev-icon,
+.custom-carousel-arrow .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-size: 100% 100%;
+  filter: invert(0); /* Flechas negras */
+}
+
+/* Posicionamiento más ajustado */
+.carousel-control-prev.custom-carousel-arrow {
+  left: 10px;
+}
+
+.carousel-control-next.custom-carousel-arrow {
+  right: 10px;
+}
+.carousel {
+  z-index: 1;
+  position: relative;
+}

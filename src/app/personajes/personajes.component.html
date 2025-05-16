@@ -1,0 +1,35 @@
+
+<h2 class="text-center my-4">Actores Principales de Películas de Tarantino</h2>
+
+<div class="container">
+  <div class="row" *ngFor="let actor of actores">
+    <div class="col-md-12 ">
+      <div class="card mb-4">
+        <div class="row g-0 align-items-center">
+          
+          <!-- Imagen del actor -->
+          <div class="col-md-3 text-center px-3">
+            <img [src]="actor.imgActor" [alt]="actor.nombre" class="img-fluid rounded-circle p-2  d-block"  style="max-height: 600px; object-fit: cover;">
+          </div>
+
+          <!-- Nombre y películas -->
+          <div class="col-md-9 px-3">
+            <div class="card-body mb-3">
+              <h5 class="card-title">{{ actor.nombre }}</h5>
+
+              <ul *ngIf="actor.peliculas.length > 0" class="mb-0">
+                <li *ngFor="let pelicula of actor.peliculas">{{ pelicula }}</li>
+              </ul>
+              <p *ngIf="actor.peliculas.length === 0" class="text-muted">
+                No participó en películas famosas de Tarantino.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

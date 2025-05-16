@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(46, 52, 58);
+  overflow-x: hidden;
+}
+
+/* Este es el contenedor principal en PrivateLayoutComponent */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Esta clase hace que el contenido empuje al footer hacia abajo */
+.content-wrap {
+  flex: 1;
+}

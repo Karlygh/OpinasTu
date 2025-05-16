@@ -1,0 +1,309 @@
+/* ================================
+   ESTILOS GENERALES
+================================== */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #f7c948;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+h2:hover {
+  color: #f7c948;
+}
+
+strong {
+  color: #f7c948;
+}
+
+p {
+  margin: 0.3rem 0;
+}
+
+img {
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 3px solid #444;
+}
+
+/* ================================
+   EFECTOS SOBRE TARJETAS / TEXTOS
+================================== */
+.movie-card:hover h2 {
+  text-align: center;
+  text-shadow: 0 0 5px #f7c948, 0 0 10px #f7c948;
+}
+
+/* ================================
+   TARJETA DE PELÍCULA
+================================== */
+.pelicula-card {
+  background: #2c2c3e;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+}
+
+/* Tarjeta animada (estética alternativa) */
+.movie-card {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.movie-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(255, 193, 7, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.6);
+  z-index: 10;
+}
+
+/* ================================
+   EFECTOS SOBRE IMAGEN Y BOTONES
+================================== */
+.movie-poster {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.movie-card:hover .movie-poster {
+  filter: brightness(1);
+  transform: scale(1.03);
+}
+
+.movie-button {
+  transition: all 0.2s ease;
+}
+.movie-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+}
+
+/* ================================
+   BOTONES GENERALES
+================================== */
+button,
+.btn-warning {
+  background: #f7c948;
+  color: #1e1e2f;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.btn-warning:hover {
+  background: #ffdf70;
+  transform: translateY(-2px);
+}
+
+.btn-outline-warning {
+  border: 2px solid #f7c948;
+  color: #f7c948;
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+  background-color: #f7c948;
+  color: #1e1e2f;
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline-warning.active {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ================================
+   BOTÓN CERRAR MODAL (X)
+================================== */
+.btn-close {
+  filter: invert(1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.btn-close:hover {
+  filter: invert(1) brightness(1.5);
+  transform: rotate(90deg);
+}
+
+/* ================================
+   OPINIONES
+================================== */
+ul {
+  padding-left: 0;
+}
+li,
+.list-group-item {
+  background-color: #b8b8d3;
+  color: #e0e0e0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  list-style: none;
+  border-left: 3px solid #f7c948;
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 193, 7, 0.1) !important;
+  transform: translateX(5px);
+}
+
+/* ================================
+   MODAL
+================================== */
+.modal-dialog {
+  background-color: tomato;
+}
+
+.modal-content {
+  background-color: #212529;
+  border: 2px solid #f7c948;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.modal-header {
+  border-bottom: 2px solid #f7c948;
+  padding: 1.2rem 1.5rem;
+}
+
+.modal-title {
+  color: #f7c948;
+  font-size: 1.4rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  background-color: #0f0f13;
+  font-style: italic;
+}
+
+.modal-footer {
+  border-top: 2px solid #f7c948;
+  padding: 1rem 1.5rem;
+  background-color: #282b2e;
+}
+
+/* ================================
+   FORMULARIO
+================================== */
+.form-label {
+  color: #f7c948;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  background-color: #434349;
+  border: 1px solid #555;
+  color: #ffdf70;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #f7c948;
+  color: #080808;
+  box-shadow: 0 0 0 0.25rem rgba(247, 201, 72, 0.25);
+  outline: none;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+/* ================================
+   FILTRO DE GÉNERO
+================================== */
+.filtro-genero-container {
+  background-color: rgba(33, 37, 41, 0.8);
+  border: 1px solid #ffc107;
+}
+#filtroTitulo{
+  color:black
+}
+
+/* ================================
+   PAGINACIÓN
+================================== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 0.15rem;
+  perspective: 1000px;
+  background-color:#68665e;
+}
+
+.page-link {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #ffd700;
+  background-color: transparent;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  color: black;
+  background-color: rgba(255, 193, 7, 0.1);
+  transform: translateY(-2px);
+}
+
+.page-link:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffd700;
+  z-index: -1;
+  animation: slideIn 0.3s forwards;
+}
