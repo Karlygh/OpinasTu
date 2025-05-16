@@ -1,0 +1,528 @@
+{
+    "movies": [
+      {
+        "title": "Kill Bill: Vol. 1",
+        "year": 2003,
+        "id":1,
+        "director": "Quentin Tarantino",
+        "genre": ["Acción", "Crimen", "Suspenso"],
+        "duration": 111,
+        "rating": 8.2,
+        "imageUrl": "assets/images/kill-bill.jpg",
+        "resumen": "Primera parte de la venganza de Beatrix Kiddo (Uma Thurman), una asesina que despierta de un coma de cuatro años decidida a eliminar al equipo que la traicionó. La película es un frenético collage de géneros: artes marciales, anime, western y exploitation. Destacan la masacre en la Casa de las Hojas Azules y el duelo con O-Ren Ishii (Lucy Liu). Con una estética hiperviolenta y referencias al cine asiático de los 70, Tarantino construye una fábula sobre la obsesión y la justicia retributiva, donde cada secuencia es un tributo cinematográfico.",
+        "opinions": [
+          {
+            "name": "Elena",
+            "opinion": "La escena de la pelea en la Casa de las Hojas Azules es simplemente icónica.",
+            "nota": 9
+          },
+          {
+            "name": "Raúl",
+            "opinion": "Tarantino rinde homenaje al cine de artes marciales de la mejor manera posible.",
+            "nota": 8
+          },
+          {
+            "name": "Lucía",
+            "opinion": "Uma Thurman es perfecta en este papel, una de las mejores heroínas de acción.",
+            "nota": 9
+          }
+        ]
+      },
+      {
+        "title": "Pulp Fiction",
+        "year": 1994,
+        "id":2,
+        "director": "Quentin Tarantino",
+        "genre": ["Crimen", "Drama"],
+        "duration": 154,
+        "rating": 8.9,
+        "imageUrl": "assets/images/pulp-fiction.jpg",
+        "resumen": "Pulp Fiction es un icónico filme de Quentin Tarantino que entrelaza múltiples historias del bajo mundo en Los Ángeles, estructuradas de manera no lineal. La película sigue a dos matones, Vincent Vega y Jules Winnfield, encargados de recuperar un misterioso maletín para su jefe, Marsellus Wallace. Paralelamente, se exploran las vidas de otros personajes, como Butch Coolidge, un boxeador que traiciona a la mafia, y Mia Wallace, la enigmática esposa de Marsellus. Con diálogos filosóficos, violencia estilizada y una banda sonora memorable, la cinta deconstruye los códigos del cine de gánsteres mientras reflexiona sobre el azar, la redención y la moralidad en un mundo caótico.",
+        "opinions": [
+          {
+            "name": "Carlos",
+            "opinion": "Pulp Fiction es una obra maestra, la narrativa no lineal es brillante.",
+            "nota": 9
+          },
+          {
+            "name": "Ana",
+            "opinion": "Una de las películas más sorprendentes que he visto. Los diálogos son icónicos.",
+            "nota": 10
+          },
+          {
+            "name": "Luis",
+            "opinion": "La película tiene un ritmo increíble, los personajes están perfectamente desarrollados.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Once Upon a Time in Hollywood",
+        "year": 2019,
+        "id":3,
+        "director": "Quentin Tarantino",
+        "genre": ["Comedia", "Drama"],
+        "duration": 161,
+        "rating": 7.6,
+        "imageUrl": "assets/images/hollywoos.jpg",
+        "resumen": "Ambientada en 1969, sigue a Rick Dalton (Leonardo DiCaprio), una estrella televisiva en decadencia, y a su doble Cliff Booth (Brad Pitt), mientras navegan una industria en transición. La película entrelaza su historia con la de Sharon Tate (Margot Robbie) y los Manson, culminando en un final alternativo que reescribe el trágico destino de Tate. Con una recreación minuciosa del Hollywood de la época, el filme es una carta de amor al cine y a la inocencia perdida. Destacan la química entre DiCaprio y Pitt, y la secuencia del enfrentamiento con los hippies, donde Tarantino subvierte la historia con su sello característico.",
+        "opinions": [
+          {
+            "name": "Diego",
+            "opinion": "Una carta de amor a Hollywood, con actuaciones increíbles de DiCaprio y Pitt.",
+            "nota": 9
+          },
+          {
+            "name": "Laura",
+            "opinion": "El final es puro Tarantino, una mezcla de violencia y satisfacción.",
+            "nota": 8
+          },
+          {
+            "name": "Pablo",
+            "opinion": "La reconstrucción de Los Ángeles en los 60 es impresionante.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Reservoir Dogs",
+        "year": 1992,
+        "id":4,
+        "director": "Quentin Tarantino",
+        "genre": ["Crimen", "Suspenso"],
+        "duration": 99,
+        "rating": 8.3,
+        "imageUrl": "assets/images/Reservoir_Dogs.jpg",
+        "resumen": "En su ópera prima, Tarantino presenta a seis criminales profesionales reunidos para un robo de diamantes que sale catastróficamente mal. La película, narrada mediante saltos temporales, se centra en las tensiones entre los supervivientes, quienes sospechan que hay un infiltrado entre ellos. Destacan escenas como el brutal interrogatorio a un policía y los monólogos cargados de ironía. Con un estilo minimalista y una violencia cruda, Reservoir Dogs explora la lealtad, la paranoia y los códigos del crimen, estableciendo las señas de identidad del director: diálogos afilados y una estética influenciada por el cine noir y el exploitation.",
+        "opinions": [
+          {
+            "name": "Javier",
+            "opinion": "El debut de Tarantino es simplemente brillante, lleno de tensión y personajes memorables.",
+            "nota": 9
+          },
+          {
+            "name": "Carmen",
+            "opinion": "La escena de la oreja es difícil de olvidar, pero la película es una obra maestra.",
+            "nota": 8
+          },
+          {
+            "name": "Alberto",
+            "opinion": "Los diálogos son lo mejor de la película, especialmente la conversación sobre Madonna.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Jackie Brown",
+        "year": 1997,
+        "id":5,
+        "director": "Quentin Tarantino",
+        "genre": ["Crimen", "Drama", "Suspenso"],
+        "duration": 154,
+        "rating": 7.5,
+        "imageUrl": "assets/images/jackie-brown.jpg",
+        "resumen": "Adaptación de la novela 'Rum Punch' de Elmore Leonard, Jackie Brown es un homenaje al blaxploitation y al cine de los 70. Pam Grier interpreta a una azafata que transporta dinero para un traficante de armas (Samuel L. Jackson). Cuando es arrestada, urde un plan junto al alguacil Max Cherry (Robert Forster) para estafar a ambas partes. Con un ritmo deliberadamente pausado, la película explora la soledad y la redención en la mediana edad, destacando por su madurez narrativa y personajes complejos. La banda sonora, con soul y funk, refuerza su atmósfera nostálgica.",
+        "opinions": [
+          {
+            "name": "Silvia",
+            "opinion": "Pam Grier es magnífica, y la película tiene un ritmo más pausado pero igual de envolvente.",
+            "nota": 8
+          },
+          {
+            "name": "Hugo",
+            "opinion": "La banda sonora es una de las mejores de Tarantino.",
+            "nota": 9
+          },
+          {
+            "name": "Clara",
+            "opinion": "Una película subestimada, con diálogos brillantes y personajes complejos.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Kill Bill 2",
+        "year": 2004,
+        "id":6,
+        "director": "Quentin Tarantino ",
+        "genre": ["Acción", "Crimen", "Drama"],
+        "duration": 118,
+        "rating": 7.3,
+        "imageUrl": "assets/images/kill-bill2.jpg",
+        "resumen": "Segunda parte de la épica venganza de 'La Novia' (Beatrix Kiddo), este filme profundiza en su enfrentamiento final con Bill, líder de los Deadly Vipers. A diferencia del primer volumen, aquí predomina el desarrollo emocional de los personajes, con flashbacks que revelan el pasado de Beatrix y su relación con Bill. La película mezcla artes marciales, spaghetti western y drama personal, culminando en un duelo cargado de simbolismo. Destacan la secuencia del entierro en vivo y el entrenamiento con Pai Mei, figuras clave en la mitología creada por Tarantino.",
+        "opinions": [
+          {
+            "name": "Pedro",
+            "opinion": "Fascinante sin palabras.",
+            "nota": 8
+          },
+          {
+            "name": "Mario",
+            "opinion": "La mejor película para mí de este director.",
+            "nota": 10
+          },
+          {
+            "name": "Sergio",
+            "opinion": "Una película caótica.",
+            "nota": 7
+          }
+        ]
+      },
+      {
+        "title": "Death Proof",
+        "year": 2007,
+        "id":7,
+        "director": "Quentin Tarantino",
+        "genre": ["Acción", "Suspenso"],
+        "duration": 113,
+        "rating": 7.0,
+        "imageUrl": "assets/images/death.jpg",
+        "resumen": "Filmada como parte del proyecto Grindhouse (junto a Robert Rodriguez), Death Proof es un homenaje a los slashers y películas de persecución de los 70. Kurt Russell interpreta a Stuntman Mike, un doble de riesgo que asesina mujeres con su automóvil 'a prueba de muerte'. La película se divide en dos actos: el primero muestra sus crímenes en Texas, mientras el segundo sigue a un grupo de mujeres que se convierten en sus víctimas y luego en sus cazadoras. Con largos diálogos y secuencias de acción prácticas, Tarantino explora el empoderamiento femenino y la ética del espectador ante la violencia.",
+        "opinions": [
+          {
+            "name": "Ricardo",
+            "opinion": "La persecución final es una de las mejores filmadas en la historia del cine.",
+            "nota": 8
+          },
+          {
+            "name": "Natalia",
+            "opinion": "Kurt Russell es fantástico como villano, aunque la película es divisiva.",
+            "nota": 7
+          },
+          {
+            "name": "Oscar",
+            "opinion": "Menos conocida de Tarantino, pero con momentos brillantes.",
+            "nota": 7
+          }
+        ]
+      },
+      {
+        "title": "Inglourious Basterds",
+        "year": 2009,
+        "id":8,
+        "director": "Quentin Tarantino",
+        "genre": ["Aventura", "Drama", "Guerra"],
+        "duration": 153,
+        "rating": 8.3,
+        "imageUrl": "assets/images/malditos.jpg",
+        "resumen": "En esta revisión histórica alternativa de la Segunda Guerra Mundial, un grupo de soldados judíos liderados por Aldo Raine (Brad Pitt) aterroriza a los nazis en la Francia ocupada. Paralelamente, Shosanna Dreyfus (Mélanie Laurent), una joven judía, planea vengarse durante el estreno de una película propagandística. Christoph Waltz gana un Óscar como Hans Landa, el despiadado 'Cazador de Judíos'. La película combina suspense, humor negro y violencia catártica, culminando en un climax donde el cine se convierte en arma de destrucción masiva. Un manifiesto sobre el poder del arte para reescribir la historia.",
+        "opinions": [
+          {
+            "name": "María",
+            "opinion": "Una película intensa, llena de tensión y con un final increíblemente satisfactorio.",
+            "nota": 9
+          },
+          {
+            "name": "José",
+            "opinion": "El papel de Christoph Waltz es inolvidable, una de sus mejores actuaciones.",
+            "nota": 10
+          },
+          {
+            "name": "Marta",
+            "opinion": "La mezcla de humor negro con drama es única en esta película, es una de las mejores de Tarantino.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Django Unchained",
+        "year": 2012,
+        "id":9,
+        "director": "Quentin Tarantino",
+        "genre": ["Drama", "Western"],
+        "duration": 165,
+        "rating": 8.5,
+        "imageUrl": "assets/images/jango.jpg",
+        "resumen": "Ambientada en el sur esclavista de EE.UU. antes de la Guerra Civil, sigue a Django (Jamie Foxx), un esclavo liberado por el cazador de recompensas Dr. King Schultz (Christoph Waltz). Juntos rastrean a los hermanos Brittle y luego a Calvin Candie (Leonardo DiCaprio), dueño de la plantación donde está Broomhilda (Kerry Washington), esposa de Django. La película es un western revisionista que expone la brutalidad de la esclavitud con una violencia casi surrealista, mientras homenajea al spaghetti western y al blaxploitation. Destacan el monólogo de Candie sobre frenología y la explosiva secuencia final.",
+        "opinions": [
+          {
+            "name": "Sofía",
+            "opinion": "Es una historia épica y emocional, con un mensaje poderoso sobre la libertad.",
+            "nota": 9
+          },
+          {
+            "name": "Fernando",
+            "opinion": "El trabajo de Samuel L. Jackson es fantástico, y la acción es brutal.",
+            "nota": 8
+          },
+          {
+            "name": "David",
+            "opinion": "Una de las mejores películas de Tarantino, con un ritmo imparable y un final perfecto.",
+            "nota": 10
+          }
+        ]
+      },
+      {
+        "title": "The Hateful Eight",
+        "id":10,
+        "year": 2015,
+        "director": "Quentin Tarantino",
+        "genre": ["Crimen", "Drama", "Misterio"],
+        "duration": 168,
+        "rating": 7.8,
+        "imageUrl": "assets/images/ocho.jpg",
+        "resumen": "Filmada en glorioso 70mm, esta cinta de misterio sigue a ocho personajes atrapados en una posada durante una tormenta de nieve en Wyoming post-Guerra Civil. Entre ellos están el cazador de recompensas John Ruth (Kurt Russell), su prisionera Daisy Domergue (Jennifer Jason Leigh), y el Major Marquis Warren (Samuel L. Jackson). Con estructura de obra de teatro, la película desentraña lentamente las mentiras y alianzas entre los personajes, culminando en un baño de sangre. Tarantino reflexiona sobre la justicia, el racismo y la desconfianza en una América fracturada, con diálogos incisivos y un score inquietante de Ennio Morricone.",
+        "opinions": [
+          {
+            "name": "Isabel",
+            "opinion": "La tensión que crea Tarantino en un solo escenario es magistral.",
+            "nota": 8
+          },
+          {
+            "name": "Roberto",
+            "opinion": "Samuel L. Jackson y Kurt Russell son impresionantes en sus papeles.",
+            "nota": 9
+          },
+          {
+            "name": "Patricia",
+            "opinion": "Un western diferente, con más diálogo que acción pero igualmente intenso.",
+            "nota": 7
+          }
+        ]
+      },
+      {
+        "title": "Four Rooms",
+        "year": 1995,
+        "id":11,
+        "director": "Allison Anders, Alexandre Rockwell, Robert Rodriguez, Quentin Tarantino",
+        "genre": ["Comedia"],
+        "duration": 98,
+        "rating": 6.7,
+        "imageUrl": "assets/images/four.jpg",
+        "resumen": "Película antológica que sigue a Ted (Tim Roth), un botones de hotel, durante la Nochevieja en cuatro historias dirigidas por diferentes cineastas. El segmento de Tarantino ('The Man from Hollywood') es un homenaje al episodio de Alfred Hitchcock, donde un director (Tarantino) y sus amigos realizan una apuesta macabra inspirada en un cuento de Roald Dahl. Aunque irregular, la cinta destaca por su humor absurdo y el carisma de Roth, quien lleva el hilo conductor. Es una rareza en la filmografía de Tarantino, pero muestra su fascinación por los diálogos intrincados y las situaciones límite.",
+        "opinions": [
+          {
+            "name": "Mónica",
+            "opinion": "El segmento de Tarantino es el más divertido y mejor escrito.",
+            "nota": 8
+          },
+          {
+            "name": "Iván",
+            "opinion": "Es una película irregular, pero tiene momentos brillantes.",
+            "nota": 7
+          },
+          {
+            "name": "Álvaro",
+            "opinion": "Una comedia curiosa con un reparto genial. Tim Roth está genial.",
+            "nota": 7
+          }
+        ]
+      },
+      {
+          "title": "Sin City",
+        "year": 2005,
+        "id": 12,
+        "director": "Frank Miller, Robert Rodriguez, Quentin Tarantino",
+        "genre": ["Crimen", "Suspenso", "Neo-Noir"],
+        "duration": 124,
+        "rating": 8.0,
+        "imageUrl": "assets/images/citty.jpg",
+        "resumen": "Adaptación de la novela gráfica de Frank Miller, esta película presenta múltiples historias entrelazadas en Basin City, una ciudad corrupta y violenta. Tarantino co-dirigió un segmento especial.",
+        "opinions": [
+          {
+            "name": "Alex",
+            "opinion": "El estilo visual es revolucionario.",
+            "nota": 9
+          },
+          {
+            "name": "Nuria",
+            "opinion": "Mickey Rourke está increíble como Marv, mi personaje favorito.",
+            "nota": 8
+          },
+          {
+            "name": "Gonzalo",
+            "opinion": "La secuencia dirigida por Tarantino es la mejor parte de la película.",
+            "nota": 8
+          }
+        ]
+      },
+      {
+        "title": "Taxi Driver",
+        "year": 1976,
+        "id": 13,
+        "director": "Martin Scorsese",
+        "genre": ["Drama", "Crimen"],
+        "duration": 114,
+        "rating": 8.3,
+        "imageUrl": "assets/images/taxi.jpg",
+        "resumen": "Un veterano mentalmente inestable trabaja como taxista nocturno, y su odio hacia la decadencia social lo lleva a la violencia.",
+        "opinions": [
+          {
+            "name": "travisfan",
+            "opinion": "Inquietante y poderosa, De Niro está increíble.",
+            "nota": 5
+          },
+          {
+            "name": "newyorklover",
+            "opinion": "Una mirada oscura a la ciudad y la mente humana.",
+            "nota": 4
+          },
+          {
+            "name": "scorseselover",
+            "opinion": "La película más inquietante de Scorsese.",
+            "nota": 5
+          }
+        ]
+      },
+      {
+        "title": "Goodfellas",
+        "year": 1990,
+        "id": 14,
+        "director": "Martin Scorsese",
+        "genre": ["Biografía", "Crimen", "Drama"],
+        "duration": 146,
+        "rating": 8.7,
+        "imageUrl": "assets/images/goodfellas.jpg",
+        "resumen": "La vida de Henry Hill, desde sus inicios en el crimen organizado hasta su caída como testigo protegido.",
+        "opinions": [
+          {
+            "name": "mafioso_real",
+            "opinion": "Una de las mejores películas de mafias de todos los tiempos.",
+            "nota": 5
+          },
+          {
+            "name": "cinefan90",
+            "opinion": "De Niro y Pesci hacen una dupla brutal.",
+            "nota": 5
+          },
+          {
+            "name": "viciosocine",
+            "opinion": "Un retrato fascinante de la mafia y su decadencia.",
+            "nota": 5
+          }
+        ]
+      },
+      {
+        "title": "El Padrino II",
+        "year": 1974,
+        "id": 15,
+        "director": "Francis Ford Coppola",
+        "genre": ["Crimen", "Drama"],
+        "duration": 202,
+        "rating": 9.0,
+        "imageUrl": "assets/images/padrino2.jpg",
+        "resumen": "Sigue la historia de Michael Corleone como jefe de la familia, mientras se muestran los orígenes de Vito Corleone.",
+        "opinions": [
+          {
+            "name": "donfan",
+            "opinion": "La actuación de De Niro como Vito joven es magistral.",
+            "nota": 8
+          },
+          {
+            "name": "mafiafan",
+            "opinion": "Un clásico que supera incluso a la primera parte.",
+            "nota": 9
+          },
+          {
+            "name": "cinemaniaco",
+            "opinion": "Una película que eleva a la saga a un nivel épico.",
+            "nota": 10
+          }
+        ]
+      },
+      {
+        "title": "Toro Salvaje",
+        "year": 1980,
+        "id": 16,
+        "director": "Martin Scorsese",
+        "genre": ["Biografía", "Drama", "Deportes"],
+        "duration": 129,
+        "rating": 8.2,
+        "imageUrl": "assets/images/toro.jpg",
+        "resumen": "La vida del boxeador Jake LaMotta, cuya violencia autodestructiva arruina su carrera y vida personal.",
+        "opinions": [
+          {
+            "name": "ringlover",
+            "opinion": "Una actuación física y emocional impresionante.",
+            "nota": 10
+          },
+          {
+            "name": "cineclásico",
+            "opinion": "Una obra maestra de Scorsese y De Niro.",
+            "nota": 8
+          },
+          {
+            "name": "deNirofan",
+            "opinion": "La película muestra lo destructiva que puede ser la obsesión.",
+            "nota": 7
+          }
+        ]
+      },
+      {
+        "title": "Casino",
+        "year": 1995,
+        "id": 17,
+        "director": "Martin Scorsese",
+        "genre": ["Crimen", "Drama"],
+        "duration": 178,
+        "rating": 8.2,
+        "imageUrl": "assets/images/casino.jpg",
+        "resumen": "Un experto en apuestas deportivas es enviado a Las Vegas para dirigir un casino, pero la ambición y la traición lo rodean.",
+        "opinions": [
+          {
+            "name": "vegasfan",
+            "opinion": "Una historia fascinante sobre el poder y la caída.",
+            "nota": 8
+          },
+          {
+            "name": "scorseselover",
+            "opinion": "Visualmente impactante y con actuaciones de lujo.",
+            "nota": 9
+          },
+          {
+            "name": "casinoaddict",
+            "opinion": "Una película sobre el glamour y la corrupción de Las Vegas.",
+            "nota": 9
+          }
+        ]
+      },
+      {
+        "title": "El Irlandés",
+        "year": 2019,
+        "id": 18,
+        "director": "Martin Scorsese",
+        "genre": ["Crimen", "Drama"],
+        "duration": 209,
+        "rating": 8.0,
+        "imageUrl": "assets/images/irlandes.jpg",
+        "resumen": "Frank Sheeran, un asesino a sueldo, recuerda su implicación con el crimen organizado y la desaparición de Jimmy Hoffa.",
+        "opinions": [
+          {
+            "name": "netflixlover",
+            "opinion": "Tres leyendas juntas. Lenta pero brillante.",
+            "nota": 9
+          },
+          {
+            "name": "historiador_70",
+            "opinion": "Una despedida elegante al cine de mafias.",
+            "nota": 8
+          },
+          {
+            "name": "cinelover89",
+            "opinion": "Una obra profunda que merece ser vista con atención.",
+            "nota": 8
+          }
+        ]
+      }
+    ],
+    "titulos": [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Kill Bill: Vol. 1",
+      "Kill Bill: Vol. 2",
+      "Inglourious Basterds",
+      "Django Unchained",
+      "The Hateful Eight",
+      "Once Upon a Time in Hollywood",
+      "Jackie Brown",
+      "True Romance",
+      "Natural Born Killers",
+      "Sin City",
+      "Taxi Driver",
+      "Goodfellas",
+      "El Padrino II",
+      "Toro Salvaje",
+      "Casino",
+      "El Irlandés"
+    ]
+  }
