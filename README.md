@@ -1,4 +1,4 @@
-1ºAbrir con GitHubPages. https://karlygh.github.io/Opinatu/
+1ºAbrir con GitHubPages. https://karlygh.github.io/Opinastu/
 
 # OpinasTu
 
